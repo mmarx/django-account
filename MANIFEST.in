@@ -1,0 +1,1 @@
+recursive-include account/templates *.html *.txt

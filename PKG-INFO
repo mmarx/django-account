@@ -1,0 +1,19 @@
+Metadata-Version: 1.0
+Name: django-account
+Version: 0.1.14
+Summary: Django application for registration and authentication
+Home-page: http://bitbucket.org/lorien/django-account/
+Author: Grigoriy Petukhov
+Author-email: lorien@lorien.name
+License: BSD
+Description: UNKNOWN
+Keywords: django application registration
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Utilities

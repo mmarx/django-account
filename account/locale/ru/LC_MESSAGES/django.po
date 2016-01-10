@@ -1,0 +1,246 @@
+# django-account localization.
+# Copyright (C) 2011 Andrew Grigorev <andrew@ei-grad.ru>
+# Copyright (C) 2008-2009 Grigoriy Petukhov <lizendir@gmail.com>
+# This file is distributed under the same license as the django-accout package.
+# Grigoriy Petukhov <lizendir@gmail.com>, 2008
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-14 09:26+0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Andrew Grigorev <andrew@ei-grad.ru>\n"
+"Language-Team: \n"
+"Language: Russian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: forms.py:41
+#, python-format
+msgid "Password length is less than %(min)d"
+msgstr "Длина пароля меньше, чем %(min)d"
+
+#: forms.py:43
+#, python-format
+msgid "Password length is more than %(max)d"
+msgstr "Длина пароля больше, чем %(max)d"
+
+#: forms.py:48
+msgid "Login"
+msgstr "Логин"
+
+#: forms.py:48
+#, python-format
+msgid ""
+"You can use a-z, 0-9 and underscore. Login length could be from %(min)s to "
+"%(max)s chars."
+msgstr ""
+"Вы можете использовать символы a-z, 0-9 и подчёркивание. Длина логина должна "
+"быть между %(min)s и %(max)s символами."
+
+#: forms.py:49 forms.py:120
+msgid "Email"
+msgstr "Электронная почта"
+
+#: forms.py:50 forms.py:135 forms.py:174
+msgid "Password"
+msgstr "Пароль"
+
+#: forms.py:51 forms.py:175
+msgid "Password (confirmation)"
+msgstr "Пароль (подтверждение)"
+
+#: forms.py:54
+#, python-format
+msgid "Login length is less than %(min)d"
+msgstr "Длина логина меньше, чем %(min)d"
+
+#: forms.py:55
+#, python-format
+msgid "Login length is more than %(max)d"
+msgstr "Длина логина больше, чем %(max)d"
+
+#: forms.py:56
+msgid "Login contains restricted symbols"
+msgstr "Логин содержит запрещённые символы"
+
+#: forms.py:57
+msgid "This login already registered"
+msgstr "Этот логин уже занят"
+
+#: forms.py:58
+msgid "This email already registered."
+msgstr "Этот email уже зарегистрирован."
+
+#: forms.py:59
+msgid "Passwords do not match"
+msgstr "Пароли не совпадают"
+
+#: forms.py:122
+msgid "This email is not registered"
+msgstr "Этот email не зарегистрирован"
+
+#: forms.py:134
+msgid "Username"
+msgstr "Логин"
+
+#: forms.py:138
+msgid "Incorrect login or password"
+msgstr "Неправильный логин или пароль"
+
+#: forms.py:139
+msgid "Sorry. You account is not active. Maybe you didn't activate it."
+msgstr ""
+"Извините. Ваша учётная запись неактивна. Возможно, вы ещё не активировали её."
+
+#: forms.py:173
+msgid "Old password"
+msgstr "Старый пароль"
+
+#: forms.py:180
+msgid "Incorrect old password"
+msgstr "Неправильный старый пароль"
+
+#: forms.py:181
+msgid "The passwords do not match"
+msgstr "Пароли не совпадают"
+
+#: forms.py:222
+msgid "Invalid username"
+msgstr ""
+
+#: forms.py:236
+msgid "New email"
+msgstr ""
+
+#: settings.py:18
+msgid "Enter the text on the image"
+msgstr ""
+
+#: views.py:42
+msgid "Sorry. Registration is disabled."
+msgstr "Извините. Регистрация закрыта."
+
+#: views.py:44
+msgid "You have to logout before registration"
+msgstr "Вы должны выйти перед регистрацией"
+
+#: views.py:66
+msgid ""
+"The error was occuried while sending email with activation code. Account was "
+"not created. Please, try later."
+msgstr ""
+"Во время отсылки email возникла ошибка. Учётная запись не создана. "
+"Пожалуйста, попробуйте позже."
+
+#: views.py:92 views.py:172
+msgid "Check the mail please"
+msgstr "Проверьте почту, пожалуйста"
+
+#: views.py:94 views.py:174
+msgid ""
+"Unfortunately we could not send you email in current time. Please, try later"
+msgstr ""
+"К сожалению, мы не можем выслать вам сейчас email. Пожалуйста, попробуйте "
+"позже."
+
+#: views.py:103
+msgid "You are already authenticated"
+msgstr "Вы уже вошли"
+
+#: views.py:181
+#, python-format
+msgid "Your email has been changed to %s"
+msgstr "Ваш адрес был изменен на %s"
+
+#: views.py:197
+msgid "You have successfully loged out"
+msgstr "Вы успешно вышли"
+
+#: templates/account/activation_required.html:5
+msgid ""
+"You have successfully registered in our site. Now you should activate your "
+"account. Check email please."
+msgstr ""
+"Вы успешно зарегистрировались. Теперь вам нужно активировать вашу учётную "
+"запись. Пожалуйста, проверьте почту."
+
+#: templates/account/email_change.html:5
+msgid "Change email"
+msgstr "Изменение адреса"
+
+#: templates/account/email_change.html:8
+#: templates/account/password_change.html:8
+msgid "Save"
+msgstr "Сохранить"
+
+#: templates/account/login.html:4
+msgid "Log in"
+msgstr "Войти"
+
+#: templates/account/login.html:7
+msgid "Authorization"
+msgstr "Авторизация"
+
+#: templates/account/login.html:8
+msgid ""
+"You should login to gain access to all site features. If you have not account"
+msgstr ""
+"Вы должны авторизоваться, чтобы получить доступ ко всем возможностям сайта. "
+"Если у вас нет учётной записи,"
+
+#: templates/account/login.html:8
+msgid "register"
+msgstr "пройдите регистрацию"
+
+#: templates/account/login.html:8
+msgid " please."
+msgstr ", пожалуйста."
+
+#: templates/account/login.html:11
+msgid "login"
+msgstr "войти"
+
+#: templates/account/login.html:14
+msgid "I forgot password"
+msgstr "Я забыл(а) пароль"
+
+#: templates/account/password_change.html:5
+msgid "New password"
+msgstr "Новый пароль"
+
+#: templates/account/password_change_done.html:6
+msgid "Password has been changed."
+msgstr "Пароль был изменён."
+
+#: templates/account/password_change_done.html:8
+#, python-format
+msgid ""
+"Password has been changed. You can now <a href=\"%(login_url)s\">log on</a> "
+"site."
+msgstr ""
+
+#: templates/account/password_reset.html:4
+#: templates/account/password_reset.html:7
+msgid "Password restore"
+msgstr "Восстановление пароля"
+
+#: templates/account/password_reset.html:10
+#: templates/account/registration.html:10
+msgid "Continue"
+msgstr "Продолжить"
+
+#: templates/account/registration.html:4 templates/account/registration.html:7
+msgid "Registration"
+msgstr "Регистрация"
+
+#: templates/account/registration_complete.html:5
+msgid "Welcome"
+msgstr "Добро пожаловать"
+
+#: templates/account/registration_complete.html:7
+msgid ""
+"Congratulations! You have successfully complete the registration on our site."
+msgstr "Поздравляем! Вы успешно завершили регистрацию на нашем сайте."

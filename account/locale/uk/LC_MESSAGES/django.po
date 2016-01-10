@@ -1,0 +1,309 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: django-account\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-14 12:45+0200\n"
+"PO-Revision-Date: 2011-01-14 12:45+0200\n"
+"Last-Translator: Viacheslav Svyrydiuk <svyrydiuk@gmail,com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: forms.py:42
+#, python-format
+msgid "Password length is less than %(min)d"
+msgstr "Пароль коротше  %(min)d символів"
+
+#: forms.py:44
+#, python-format
+msgid "Password length is more than %(max)d"
+msgstr "Пароль довший за %(max)d символів"
+
+#: forms.py:49
+msgid "Login"
+msgstr "Логін"
+
+#: forms.py:49
+#, python-format
+msgid ""
+"You can use a-z, 0-9 and underscore. Login length could be from %(min)s to "
+"%(max)s chars."
+msgstr "Ви можете використовувати букви a-z, цифри та символ підкреслення. Довжина імені має бути від %(min)s до %(max)s символів."
+
+#: forms.py:50 forms.py:120
+msgid "Email"
+msgstr ""
+
+#: forms.py:51 forms.py:135 forms.py:172
+msgid "Password"
+msgstr "Пароль"
+
+#: forms.py:52 forms.py:173
+msgid "Password (confirmation)"
+msgstr "Пароль (підтвердження)"
+
+#: forms.py:55
+#, python-format
+msgid "Login length is less than %(min)d"
+msgstr "Логін коротший  %(min)d символів"
+
+#: forms.py:56
+#, python-format
+msgid "Login length is more than %(max)d"
+msgstr "Логін довший за %(max)d символів"
+
+#: forms.py:57
+msgid "Login contains restricted symbols"
+msgstr "Ім'я користувача містить недопустимі символи"
+
+#: forms.py:58
+msgid "This login already registered"
+msgstr "Користувач з таким ім'ям вже існує"
+
+#: forms.py:59
+msgid "This email already registered."
+msgstr "Такий email вже зареєстрований"
+
+#: forms.py:60
+msgid "Passwords do not match"
+msgstr "Паролі не співпадають"
+
+#: forms.py:66
+msgid "Enter the word from image."
+msgstr "Введіть слово з зображення"
+
+#: forms.py:122
+msgid "This email is not registered"
+msgstr "Цей email не зареєстровано"
+
+#: forms.py:134
+msgid "Username"
+msgstr "Ім'я користувача"
+
+#: forms.py:138
+msgid "Incorrect login or password"
+msgstr "Невірний логін чи пароль"
+
+#: forms.py:139
+msgid "Sorry. You account is not active. Maybe you didn't activate it."
+msgstr "Вибачте, ваш обліковий запис неактивний. Можливо, ви його не активували. "
+
+#: forms.py:171
+msgid "Old password"
+msgstr "Старий пароль"
+
+#: forms.py:178
+msgid "Incorrect old password"
+msgstr "Неправильний старий пароль"
+
+#: forms.py:179
+msgid "The passwords do not match"
+msgstr "Паролі не співпадають"
+
+#: forms.py:216
+msgid "Invalid username"
+msgstr "Неправильне ім'я користувача"
+
+#: forms.py:230
+msgid "New email"
+msgstr "Нова адреса email"
+
+#: views.py:40
+msgid "You have to logout before registration"
+msgstr "Ви повині вийти перед реєстрацією"
+
+#: views.py:42
+msgid "Sorry. Registration is disabled."
+msgstr "Вибачте, реєстрація вимкнена."
+
+#: views.py:65
+msgid ""
+"The error was occuried while sending email with activation code. Account was "
+"not created. Please, try later."
+msgstr ""
+"При спробі надіслати код активації виникла помилка. Обліковий запис"
+"не було створенно. Спробуйте пізніше, будь-ласка"
+
+#: views.py:90 views.py:153
+msgid "Check the mail please"
+msgstr "Перевірте пошту, будь-ласка"
+
+#: views.py:92 views.py:155
+msgid ""
+"Unfortunately we could not send you email in current time. Please, try later"
+msgstr "На жаль, зараз ми не можемо надіслати вам email. Спробуйте пізніше, будь-ласка"
+
+#: views.py:99
+msgid "You are already authenticated"
+msgstr "Ви вже увійшли"
+
+#: views.py:161
+#, python-format
+msgid "Your email has been changed to %s"
+msgstr "Вашу адресу email було змінено на %s"
+
+#: views.py:177
+msgid "You have successfully loged out"
+msgstr "Ви успішно вийшли"
+
+#: templates/account/change_email.html:5
+msgid "Change email"
+msgstr "Змінити email"
+
+#: templates/account/change_email.html:8 templates/account/new_password.html:8
+msgid "Save"
+msgstr "Зберегти"
+
+#: templates/account/created.html:5
+msgid ""
+"You have successfully registered in our site. Now you should activate your "
+"account. Check email please."
+msgstr ""
+"Ви успішно зареєструвались на нашому сайті. Тепер вам потрібно активувати ваш"
+"обліковий запис. Превірте пошту, будь-ласка."
+#: templates/account/login.html:5
+msgid "Authorization"
+msgstr "Авторизація"
+
+#: templates/account/login.html:6
+msgid ""
+"You should login to gain access to all site features. If you have not account"
+msgstr ""
+"Ви повині увійти, щоб отримати доступ до всіх розділів сайту. Якщо у вас немає облікового запису"
+
+#: templates/account/login.html:6
+msgid "register"
+msgstr "зареєструйтесь"
+
+#: templates/account/login.html:6
+msgid "please"
+msgstr "будь-ласка"
+
+#: templates/account/login.html:9
+msgid "login"
+msgstr "ім'я користувача"
+
+#: templates/account/login.html:12
+msgid "I forgot password"
+msgstr "Я забув пароль"
+
+#: templates/account/new_password.html:5
+msgid "New password"
+msgstr "Новий пароль"
+
+#: templates/account/password_changed.html:6
+msgid "Password has been changed."
+msgstr "Пароль змінено"
+
+#: templates/account/password_changed.html:8
+#, python-format
+msgid ""
+"Password has been changed. You can now <a href=\"%(login_url)s\">log on</a> "
+"site."
+msgstr ""
+"Пароль змінено. Тепер ви можете <a href=\"%(login_url)s\">увійти</a>"
+"на сайт"
+#: templates/account/registration.html:6
+msgid "Registration"
+msgstr "Реєстрація"
+
+#: templates/account/registration.html:9
+#: templates/account/reset_password.html:8
+msgid "Continue"
+msgstr "Продовжити"
+
+#: templates/account/reset_password.html:5
+msgid "Password restore"
+msgstr "Відновити пароль"
+
+#: templates/account/welcome.html:5
+msgid "Welcome"
+msgstr "Ласкаво просимо"
+
+#: templates/account/welcome.html:7
+msgid ""
+"Congratulations! You have successfully complete the registration on our site."
+msgstr ""
+"Вітаємо! Ви успішно завершили реєстрацію на нашому сайті."
+#: templates/account/mail/new_email.html:1
+#, python-format
+msgid "\"Email change on %(domain)s"
+msgstr "Знінити email на %(domain)s"
+
+#: templates/account/mail/new_email.html:2
+#, python-format
+msgid "You have requested the change of email on %(domain)s"
+msgstr "Ви запросили зміну адреси email на %(domain)s"
+
+#: templates/account/mail/new_email.html:3
+#, python-format
+msgid ""
+"After visiting <a href=\"%(url)s\">this url</a>, the new email will be set "
+"for your accont"
+msgstr ""
+""
+""
+
+#: templates/account/mail/new_email.html:4
+#, python-format
+msgid "New email: %(email)s"
+msgstr "Нова адреса email: %(email)s"
+
+#: templates/account/mail/registration.html:1
+#, python-format
+msgid "Registration on %(domain)s"
+msgstr "Реєстрація на %(domain)s"
+
+#: templates/account/mail/registration.html:2
+#, python-format
+msgid "You have begun registration on %(domain)s"
+msgstr "Ви розпочали реєстрацію на %(domain)s"
+
+#: templates/account/mail/registration.html:3
+#, python-format
+msgid ""
+"If you want activate you account %(login)s, follow the <a href=\"%(url)s"
+"\">link</a> please."
+msgstr ""
+"Для того, щоб активувати ваш обліковий запис %(login)s, пройдіть"
+"будь-ласка за <a href=\"%(url)s\">посиланням</a>."
+
+#: templates/account/mail/reset_password.html:1
+#, python-format
+msgid "Password restore on %(domain)s"
+msgstr "відновлення паролю на %(domain)s"
+
+#: templates/account/mail/reset_password.html:2
+#, python-format
+msgid "You have requested password restore on %(domain)s."
+msgstr "Ви здійснили запит щодо зміни паролю на %(domain)s."
+
+#: templates/account/mail/reset_password.html:3
+#, python-format
+msgid "Click <a href=\"%(url)s\">this link</a> to change your password."
+msgstr "Перейдіть <a href=\"%(url)s\">за цим посиланням</a> для того, щоб змінити свій пароль."
+
+#: templates/account/mail/welcome.html:1
+#, python-format
+msgid "Successfuly registration on %(domain)s"
+msgstr "Успішна реєстрація на %(domain)s"
+
+#: templates/account/mail/welcome.html:3
+#, python-format
+msgid "You have registered on %(domain)s"
+msgstr "Ви зареєструвались на %(domain)s"
+
+#: templates/account/mail/welcome.html:4
+#, python-format
+msgid "Your login is %(username)s"
+msgstr "Ваш логін %(username)s"
+
+
