@@ -1,3 +1,4 @@
+from __future__ import print_function
 from datetime import datetime
 
 from django.core.management.base import BaseCommand
@@ -11,4 +12,4 @@ class Command(BaseCommand):
         qs = AuthKey.objects.filter(expired__lt=datetime.now())
         count = qs.count()
         qs.delete()
-        print '%d keys deleted' % count
+        print('%d keys deleted' % count)
