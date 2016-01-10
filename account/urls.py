@@ -28,8 +28,12 @@ urlpatterns = patterns('account.views',
     # Registration
     url(r'^registration/$', 'registration',
         name='registration_register'),
-    url(r'^activation/required/$', TemplateView.as_view(template_name='account/activation_required.html')),
-    url(r'^registration/complete/$', TemplateView.as_view(template_name='account/registration_complete.html')),
+    url(r'^activation/required/$',
+        TemplateView.as_view(template_name='account/activation_required.html'),
+        name='activation_required'),
+    url(r'^registration/complete/$',
+        TemplateView.as_view(template_name='account/registration_complete.html'),
+        name='registration_complete'),
 
     # Password management
     url(r'^password/reset/$', 'password_reset',
