@@ -1,5 +1,5 @@
 from django.conf.urls import *
-from django.views.generic.simple import direct_to_template
+from django.views.generic.base import TemplateView
 
 """
 Urls overview in form "url name: short description":
@@ -28,12 +28,8 @@ urlpatterns = patterns('account.views',
     # Registration
     url(r'^registration/$', 'registration',
         name='registration_register'),
-    url(r'^activation/required/$', direct_to_template,
-        {'template':'account/activation_required.html'},
-        name='activation_required'),
-    url(r'^registration/complete/$', direct_to_template,
-        {'template':'account/registration_complete.html'},
-        name='registration_complete'),
+    url(r'^activation/required/$', TemplateView.as_view(template_name='account/activation_required.html')),
+    url(r'^registration/complete/$', TemplateView.as_view(template_name='account/registration_complete.html')),
 
     # Password management
     url(r'^password/reset/$', 'password_reset',
