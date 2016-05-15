@@ -1,5 +1,6 @@
 from django.conf.urls import *
 from django.views.generic.base import TemplateView
+from account.views import *
 
 """
 Urls overview in form "url name: short description":
@@ -18,15 +19,15 @@ Urls overview in form "url name: short description":
  * auth_email_change_done: the page after success email change
 """
 
-urlpatterns = patterns('account.views',
+urlpatterns = [
     # Log in, log out
-    url(r'^login/$', 'login', name='auth_login'),
-    url(r'^logout/$', 'logout', name='auth_logout'),
-    url(r'^logout/successful/$', 'logout_successful',
+    url(r'^login/$', login, name='auth_login'),
+    url(r'^logout/$', logout, name='auth_logout'),
+    url(r'^logout/successful/$', logout_successful,
         name='auth_logout_successful'),
 
     # Registration
-    url(r'^registration/$', 'registration',
+    url(r'^registration/$', registration,
         name='registration_register'),
     url(r'^activation/required/$',
         TemplateView.as_view(template_name='account/activation_required.html'),
@@ -36,15 +37,15 @@ urlpatterns = patterns('account.views',
         name='registration_complete'),
 
     # Password management
-    url(r'^password/reset/$', 'password_reset',
+    url(r'^password/reset/$', password_reset,
         name='auth_password_reset'),
-    url(r'^password/change/$', 'password_change',
+    url(r'^password/change/$', password_change,
         name='auth_password_change'),
-    url(r'^password/change/done/$', 'password_change_done',
+    url(r'^password/change/done/$', password_change_done,
         name='auth_password_change_done'),
 
     # Email management
-    url(r'^email/change/$', 'email_change', name='auth_email_change'),
-    url(r'^email/change/done/$', 'email_change_done',
+    url(r'^email/change/$', email_change, name='auth_email_change'),
+    url(r'^email/change/done/$', email_change_done,
         name='auth_email_change_done'),
-)
+]

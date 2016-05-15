@@ -103,7 +103,6 @@ def render_to(template_path):
 
 
 def load_class(path):
-    from django.db.models.loading import get_app
     module_path, class_name = path.rsplit('.', 1)
     mod = __import__(module_path, globals(), locals(), ['foobar'])
     return getattr(mod, class_name)
