@@ -147,6 +147,7 @@ def password_change(request):
 
     if form.is_valid():
         form.save()
+        auth.update_session_auth_hash(request, form.user)
         if authkey:
             authkey.delete()
         return HttpResponseRedirect(reverse('auth_password_change_done'))
