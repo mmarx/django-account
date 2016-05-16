@@ -55,12 +55,12 @@ def registration(request, form_class=RegistrationForm):
         password = form.cleaned_data['password']
 
         if settings.ACCOUNT_ACTIVATION_REQUIRED:
-            url = 'http://%s%s' % (hostname, reverse('registration_complete'))
+            url = 'http://%s%s' % (hostname, reverse('auth:registration_complete'))
             url = wrap_url(url, uid=user.id, action='activation')
             params = {'domain': hostname, 'login': user.username, 'url': url,
                       'password': password}
             if email_template(user.email, 'account/mail/activation_required', **params):
-                return HttpResponseRedirect(reverse('activation_required'))
+                return HttpResponseRedirect(reverse('auth:activation_required'))
             else:
                 user.delete()
                 return message(request, _('The error was occuried while sending email with activation code. Account was not created. Please, try later.'))
@@ -84,7 +84,7 @@ def password_reset(request, form_class=PasswordResetForm):
 
     if form.is_valid():
         user = UserModel.objects.get(email=form.cleaned_data['email'])
-        url = 'http://%s%s' % (hostname, reverse('auth_password_change'))
+        url = 'http://%s%s' % (hostname, reverse('auth:password_change'))
 
         url = wrap_url(url, uid=user.id, onetime=False, action='password_change')
         args = {'domain': hostname, 'url': url, 'user': user}
@@ -131,7 +131,7 @@ def password_change(request):
 
     if not request.user.is_authenticated():
         if not authkey:
-            return HttpResponseRedirect(reverse('auth_login') + '?next=%s' % request.path)
+            return HttpResponseRedirect(reverse('auth:login') + '?next=%s' % request.path)
 
     if authkey:
         require_old = False
@@ -150,7 +150,7 @@ def password_change(request):
         auth.update_session_auth_hash(request, form.user)
         if authkey:
             authkey.delete()
-        return HttpResponseRedirect(reverse('auth_password_change_done'))
+        return HttpResponseRedirect(reverse('auth:password_change_done'))
 
     return {'form': form,
             }
@@ -166,7 +166,7 @@ def email_change(request):
 
     if form.is_valid():
         email = form.cleaned_data['email']
-        url = 'http://%s%s' % (hostname, reverse('auth_email_change_done'))
+        url = 'http://%s%s' % (hostname, reverse('auth:email_change_done'))
         url = wrap_url(url, uid=request.user.id, action='new_email', email=email)
         args = {'domain': hostname, 'url': url, 'email': email,}
         if email_template(email, 'account/mail/email_change', **args):
@@ -184,13 +184,13 @@ def email_change_done(request):
 
 @render_to('account/password_change_done.html')
 def password_change_done(request):
-    return {'login_url': reverse('auth_login'),
+    return {'login_url': reverse('auth:login'),
             }
 
 
 def logout(request):
     auth.logout(request)
-    next = request.GET.get('next', reverse('auth_logout_successful'))
+    next = request.GET.get('next', reverse('auth:logout_successful'))
     return HttpResponseRedirect(next)
 
 

@@ -3,7 +3,7 @@ from django.utils.translation import ugettext_lazy as _
 ACCOUNT_USER_MODEL = 'django.contrib.auth.models.User'
 ACCOUNT_LOGIN_FORM = 'account.forms.LoginForm'
 
-ACCOUNT_REGISTRATION_REDIRECT_URLNAME = 'registration_complete'
+ACCOUNT_REGISTRATION_REDIRECT_URLNAME = 'auth:registration_complete'
 ACCOUNT_REGISTRATION_FORM = 'account.forms.RegistrationForm'
 ACCOUNT_REGISTRATION_ENABLED = True
 ACCOUNT_ACTIVATION_REQUIRED = True
